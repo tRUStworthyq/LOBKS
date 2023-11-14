@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import BookService from '../services/BookService'
 
-const CreateBook = (props) => {
+const CreateBook = () => {
     const navigate = useNavigate()
 
     const [name, setName] = useState('')

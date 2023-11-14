@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import BookService from '../services/BookService'
 
-const View = (props) => {
+const View = () => {
     let navigate = useNavigate()
 
     const {id} = useParams()
