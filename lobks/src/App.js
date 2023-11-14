@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css'
 import CreateBook from "./components/AddBook";
 import UpdateBook from "./components/UpdateBook";
+import View from "./components/View";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
               <Route path="/" exact Component={ListBooks}></Route>
               <Route path="/add_book" Component={CreateBook}></Route>
               <Route path="/update_book/:id" Component={UpdateBook}></Route>
+              <Route path="/:id" Component={View}></Route>
             </Routes>
           </div>
           <Footer />

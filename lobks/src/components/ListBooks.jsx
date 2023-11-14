@@ -26,6 +26,9 @@ const ListBooks = (props) => {
   let addBook = () => {
     navigate('/add_book')
   }
+  let viewBook = (id) => {
+    navigate(`/${id}`)
+  }
   
     return (
     <div>
@@ -56,6 +59,7 @@ const ListBooks = (props) => {
                                 <td className='w-25'>
                                     <button className='btn btn-info' onClick={() => editBook(book.id)}>Update</button>
                                     <button className='btn btn-danger ms-3' onClick={() => delBook(book.id)}>Delete</button>
+                                    <button className='btn btn-success ms-3' onClick={() => viewBook(book.id)}>View</button>
                                 </td>
                             </tr>    
                         )

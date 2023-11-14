@@ -69,7 +69,11 @@ const UpdateBook = () => {
                   <label>
                     Status:
                   </label>
-                  <input placeholder='You can add custom status' name='status' className='form-control' value={status} onChange={changeStatusHandler}/>
+                  <select className='form-select' value={status} onChange={changeStatusHandler}>
+                    <option value={'begane'}>begane</option>
+                    <option value={'finished'}>finished</option>
+                    <option value={'planed'}>planed</option>
+                  </select>
                 </div>
                 <button className='btn btn-success mt-3' onClick={updateBook}>Save</button>
                 <button className='btn btn-danger mt-3' onClick={cancel} style={{marginLeft: '10px'}}>Cancel</button>
