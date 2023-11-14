@@ -7,7 +7,7 @@ const CreateBook = (props) => {
 
     const [name, setName] = useState('')
     const [author, setAuthor] = useState('')
-    const [status, setStatus] = useState('')
+    const [status, setStatus] = useState('finished')
 
     let changeNameHandler = (e) => {
       setName(e.target.value)
@@ -17,6 +17,7 @@ const CreateBook = (props) => {
     }
     let changeStatusHandler = (e) => {
       setStatus(e.target.value)
+      console.log(e.target.value)
     }
     let saveBook = (e) => {
       e.preventDefault()
@@ -57,10 +58,15 @@ const CreateBook = (props) => {
                   <label>
                     Status:
                   </label>
-                  <input placeholder='You can add custom status' name='status' className='form-control' value={status} onChange={changeStatusHandler}/>
+                  {/* <input placeholder='You can add custom status' name='status' className='form-control' value={status} onChange={changeStatusHandler}/> */}
+                  <select className="form-select" name='status' value={status} onChange={changeStatusHandler}>
+                    <option value={'finished'}>finished</option>
+                    <option value={'begane'}>begane</option>
+                    <option value={'reading'}>reading</option>
+                  </select>
                 </div>
                 <button className='btn btn-success mt-3' onClick={saveBook}>Save</button>
-                <button className='btn btn-danger mt-3' onClick={cancel} style={{marginLeft: '10px'}}>Cancel</button>
+                <button className='btn btn-danger mt-3 ms-3' onClick={cancel}>Cancel</button>
               </form>
             </div>
           </div> 
