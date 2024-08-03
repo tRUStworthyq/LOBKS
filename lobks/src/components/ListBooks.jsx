@@ -54,14 +54,12 @@ const ListBooks = (props) => {
   let viewBook = (id) => {
     navigate(`/${id}`)
   }
-<<<<<<< HEAD
-=======
 
   let setToolBar = (e) => {
     setTool(e.target.value)
     dataSort(e.target.value)
   }
->>>>>>> 316323dd901840d68ed6c870c88f5c1c8f5e0e9e
+
   
     return (
     <div>

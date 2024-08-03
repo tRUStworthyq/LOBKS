@@ -1,0 +1,30 @@
+.user-panel > h1 {
+    text-align: center;
+}
+.searchbar {
+    width: 75%;
+}
+.panel-btn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width:5%;
+    height: 20%;
+    margin: 0 0 10px 10px;
+    padding: 10px;
+}
+.user-add-to-list-button {
+    text-align: center;
+}
+table {
+    text-align: center;
+    padding-top: 10px;
+}
+.pagination {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 5%;
+}
+
+
