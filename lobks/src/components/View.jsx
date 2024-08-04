@@ -3,6 +3,11 @@ import { useParams } from 'react-router-dom'
 import BookService from '../services/BookService'
 
 const View = () => {
+<<<<<<< HEAD
+=======
+    let navigate = useNavigate()
+
+>>>>>>> c75863b1788a22fe3bd0eb6b3c546d003e650490
     const {id} = useParams()
     let [book, setBook] = useState()
     useEffect(() => {
