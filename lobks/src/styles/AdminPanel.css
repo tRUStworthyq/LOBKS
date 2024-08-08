@@ -1,0 +1,16 @@
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    margin: 7px;
+    padding: 10px 50px;
+}
+.admin-panel-books {
+    width: 66%;
+}

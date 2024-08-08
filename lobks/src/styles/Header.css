@@ -1,0 +1,25 @@
+#header-img {
+    height: 70px;
+    width: 150px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name {
+    margin-right: 35px;
+}
+.btn-header {
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}

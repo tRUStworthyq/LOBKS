@@ -29,7 +29,7 @@ body{
 }
 
 .container p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
@@ -41,7 +41,7 @@ body{
 
 .container a{
     color: #333;
-    font-size: 13px;
+    font-size: 16px;
     text-decoration: none;
     margin: 15px 0 10px;
 }

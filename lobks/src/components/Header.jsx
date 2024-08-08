@@ -1,15 +1,22 @@
-import React from 'react'
+import React from 'react';
+import {useNavigate} from "react-router-dom";
+import "../styles/Header.css"
 
 const Header = () => {
-  return (
-        <header className='header'>
-            <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
-                <div className='navbar-brand mx-5'>
-                    Books Accounter
-                </div>
-            </nav>
-        </header>
-  )
-}
+    const navigate = useNavigate()
 
-export default Header
+    const handlerBtnLogout = () => {
+        navigate("/sign?#")
+        localStorage.clear()
+    }
+
+    return (
+        <header className="header">
+            <img id={"header-img"} src={"https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-simvoli-dlya-logotipov-na-prozrachnom-fone-38.png"} alt={""}/>
+            <h2 className={"name"}>LOBKS</h2>
+            <button className="btn btn-danger panel-btn btn-header" onClick={handlerBtnLogout}>Logout</button>
+        </header>
+    );
+};
+
+export default Header;

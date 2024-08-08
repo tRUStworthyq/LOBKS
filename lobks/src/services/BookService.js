@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const BOOK_API_BASE_URL = "http://localhost:8080/api/books/"
+const BOOK_API_BASE_URL = "http://localhost:8082/api/books/"
 
 const headers = {
     "Authorization": "Bearer " + JSON.parse(localStorage.getItem("jwt"))
