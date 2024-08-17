@@ -45,7 +45,6 @@ const Sign = () => {
             localStorage.setItem('email', JSON.stringify(res.data.email))
             localStorage.setItem('username', JSON.stringify(res.data.username))
             localStorage.setItem('roles', JSON.stringify(res.data.roles))
-            console.log(res.data)
             navigate("/user-panel")
         }).catch((e) => {
             if (e.response.status === 401) {
@@ -73,7 +72,7 @@ const Sign = () => {
             <form>
                 <h1>Sign In</h1>
                 <input id="username-signin" type="text" placeholder="Username"/>
-                <input id="password-signin" type="password" placeholder="Password"/>
+                <input id = "password-signin" type="password" placeholder="Password"/>
                 <a href="#">Forget Your Password?</a>
                 <button onClick={sendSignIn}>Sign In</button>
             </form>
