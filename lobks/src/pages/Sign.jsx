@@ -29,7 +29,12 @@ const Sign = () => {
             "password": password,
             "role": "user"
         }
-        AuthService.signUp(obj)
+        AuthService.signUp(obj).then((res) => {
+            window.location.reload()
+        })
+            .catch(err => {
+                alert("Username or email is already in use")
+            })
     }
     const sendSignIn = () => {
         const username = document.getElementById("username-signin").value
